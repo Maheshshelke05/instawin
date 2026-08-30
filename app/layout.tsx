@@ -35,7 +35,7 @@ const themeBootstrap = `
 (function() {
   try {
     var stored = window.localStorage.getItem('instawin-theme');
-    var theme = (stored === 'light' || stored === 'dark' || stored === 'system') ? stored : 'dark';
+    var theme = (stored === 'light' || stored === 'dark' || stored === 'system') ? stored : 'light';
     var resolved = theme === 'system'
       ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
       : theme;

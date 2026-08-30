@@ -281,7 +281,7 @@ export function CreateRuleForm({ userId, triggerSource, onSuccess, editRule }: C
                     {isCompleted ? <Check className="w-4 h-4 stroke-[3]" /> : i + 1}
                   </div>
                   <div className="hidden md:block">
-                    <p className={`text-xs font-bold tracking-tight uppercase ${isActive ? "text-foreground" : "text-muted-foreground group-hover:text-neutral-200"}`}>
+                    <p className={`text-xs font-bold tracking-tight uppercase ${isActive ? "text-foreground" : "text-muted-foreground group-hover:text-foreground/70"}`}>
                       {s.label}
                     </p>
                     <p className="text-[10px] text-muted-foreground font-mono-ui">{s.sub}</p>
